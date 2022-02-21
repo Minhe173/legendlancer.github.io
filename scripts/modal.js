@@ -36,10 +36,10 @@ $(document).ready(function () {
         'Enzyme empowers you to build and scale vaults based on the investment strategies of your choice - from discretionary and robo to ETFs and market making. Security is our priority. Our second generation smart contract-enforced platform is thoroughly tested and audited before any mainnet deployments are made.'
     },
     powur: {
-      title: '',
-      tag: 'CONSUMER POWERED MARKETING.',
+      title: 'Mydoorwallet',
+      tag: 'CUSTODIAL WALLET + STAKING PLATFORM',
       detail:
-        'Powur is a marketing platform for lead generation, recruitment, and team building. Built with Ruby on Rails and Angular-UI. Makes use of Angular-material for front-end visuals. Features complex user tree heiarchy and commission system.',
+        'Custodial wallet holding and purchasing $DOOR and $NIL, and also providing staking feature of those tokens.',
       link: 'http://www.powur.com/with/42'
     },
     mystand: {
