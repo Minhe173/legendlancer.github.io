@@ -705,13 +705,11 @@ section:nth-of-type(3) #gallery .button {
   padding: 7px 0;
   width: 170px;
 }
-#gallery .mix {
-  padding: 5px !important;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
-}
 section:nth-of-type(3) #gallery .mix {
   display: none;
   position: relative;
+  padding: 5px !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
 }
 section:nth-of-type(3) #gallery .mix .waypoint {
   background: #fff;
