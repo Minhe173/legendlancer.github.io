@@ -33,32 +33,36 @@ $(document).ready(function () {
       title: 'Enzyme Finance',
       tag: 'ASSET MANAGMENT PROTOCOL',
       detail:
-        'Enzyme empowers you to build and scale vaults based on the investment strategies of your choice - from discretionary and robo to ETFs and market making. Security is our priority. Our second generation smart contract-enforced platform is thoroughly tested and audited before any mainnet deployments are made.'
+        'Enzyme empowers you to build and scale vaults based on the investment strategies of your choice - from discretionary and robo to ETFs and market making. Security is our priority. Our second generation smart contract-enforced platform is thoroughly tested and audited before any mainnet deployments are made.',
+      link: 'http://enzyme.finance'
     },
     powur: {
       title: 'Mydoorwallet',
       tag: 'CUSTODIAL WALLET + STAKING PLATFORM',
       detail:
         'Custodial wallet holding and purchasing $DOOR and $NIL, and also providing staking feature of those tokens.',
-      link: 'http://www.powur.com/with/42'
+      link: 'http://mydoorwallet.com'
     },
     mystand: {
       title: 'Polywhale Finance',
       tag: 'DEFI PROTOCOL',
       detail:
-        'Polywhale Finance vision was and is to create one single application that can serve all your DEFI needs - and we started with farming.'
+        'Polywhale Finance vision was and is to create one single application that can serve all your DEFI needs - and we started with farming.',
+      link: 'http://polywhale.finance'
     },
     never: {
-      title: 'NeverSurrender',
-      tag: 'ALS AWARENESS.',
+      title: 'LobbyToken',
+      tag: 'ERC20 Rebase Deflationary Token',
       detail:
-        'NeverSurrender is a platform for the new ALS foundation mobile app in hopes to raise awareness and research funding to fight ALS. Pure JavaScript marketing site to promote the new ALS NeverSurrender app.'
+        '$LBY is a governance token that powers and secures the Lobby DAO. Holders of $LBY can vote on proposals for Lobby DAO as well as all future products within the Lobby DAO ecosystem.',
+      link: 'http://lobbytoken.io'
     },
     themall: {
       title: 'Xenon Finance',
       tag: 'Impermax fork DEFI | Not recommended yet',
       detail:
-        'Xenon is a decentralized LP leveraging protocol. Coming soon...'
+        'Xenon is a decentralized LP leveraging protocol. Coming soon...',
+      link: 'http://app.xenon.finance'
     }
   };
 
