@@ -705,6 +705,9 @@ section:nth-of-type(3) #gallery .button {
   padding: 7px 0;
   width: 170px;
 }
+#gallery .mix {
+  padding: 5px;
+}
 section:nth-of-type(3) #gallery .mix {
   display: none;
   position: relative;
