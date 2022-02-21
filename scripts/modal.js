@@ -1,52 +1,52 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // MODAL
   var modalText = {
     discover: {
-      title: 'ChowNow Discover',
-      tag: 'FOOD ORDERING PLATFORM.',
+      title: 'Angrybunnies NFT',
+      tag: 'NFT MINTING DAPP',
       detail:
-        'ChowNow Discover is a platform that lets customers discover new local restaurants and provides business owners with tools to convert first time orders into lifelong diners.',
-      link: 'https://eat.chownow.com/'
+        'COLLECTION OF 7,777 UNIQUE RARITY NFTS PRICED AT 0.06ETH RANDOMLY GENERATED DIGITAL COLLECTABLES FROM HAND DRAWINGS LIVING ON THE ETHEREUM BLOCKCHAIN AS ERC- 721 TOKENS',
+      link: 'https://angrybunniesnft.com/'
     },
     ordering: {
-      title: 'ChowNow Ordering Web',
-      tag: 'WHITE-LABEL ONLINE ORDERING SOLUTION.',
+      title: 'Paladinpandas NFT',
+      tag: 'NFT MINTING DAPP',
       detail:
-        'ChowNow is a commission-free online ordering system and food ordering app helping restaurants feed their hungry customers.',
-      link: 'https://direct.chownow.com/direct/195/locations/260'
+        'Paladin Pandas, 10,000 hand-drawn unique NFT digital identities. All Paladin Pandas can be used as your digital characters in Space Expedition, our on-chain game, in order to earn $BAMB. Space Expedition PvE will be launched in January 2022.',
+      link: 'https://www.paladinpandas.com/'
     },
     newrelic: {
-      title: 'NewRelic.com',
-      tag: 'APPLICATION PERFORMANCE MONITORING.',
+      title: 'NILCoin',
+      tag: 'ERC20 Token (rebase + deflationary)',
       detail:
-        'Roambi provides analytics, reporting, and business intelligence for companies to use on the go. A Wordpress hosted site written in PHP and Javascript with Hubspot Integration.',
-      link: 'http://www.newrelic.com'
+        'NIL is the Official Crypto that rewards College Athletes for their name, image & likeness when promoting products and services on social media.',
+      link: 'https://nilcoin.com/'
     },
     roambi: {
-      title: 'Roambi.com',
-      tag: 'BUSINESS ANALYTICS.',
+      title: 'NFTLocker',
+      tag: 'NFT MARKETPLACE',
       detail:
-        'Roambi provides analytics, reporting, and business intelligence for companies to use on the go. A Wordpress hosted site written in PHP and Javascript with Hubspot Integration.',
-      link: 'http://www.roambi.com'
+        'Locker is the #1 source for First Minted NFTs of Top College Athletes. Every athlete is rewarded when you buy their original NFT.',
+      link: 'http://nftlocker.io'
     },
     walker: {
-      title: 'WalkerTracker',
-      tag: 'PERFORMANCE METRICS.',
+      title: 'Enzyme Finance',
+      tag: 'ASSET MANAGMENT PROTOCOL',
       detail:
-        'Walker Tracker offers goal management, fitness tracking, and team competitions to companies for internal use. A Ruby on Rails and Javascript companion site for the Walker Tracker App. Features visual metrics and gamified progression system.'
+        'Enzyme empowers you to build and scale vaults based on the investment strategies of your choice - from discretionary and robo to ETFs and market making. Security is our priority. Our second generation smart contract-enforced platform is thoroughly tested and audited before any mainnet deployments are made.'
     },
     powur: {
-      title: 'Powur.com',
+      title: '',
       tag: 'CONSUMER POWERED MARKETING.',
       detail:
         'Powur is a marketing platform for lead generation, recruitment, and team building. Built with Ruby on Rails and Angular-UI. Makes use of Angular-material for front-end visuals. Features complex user tree heiarchy and commission system.',
       link: 'http://www.powur.com/with/42'
     },
     mystand: {
-      title: 'MyStand',
-      tag: 'CROWD-FUNDED CHARITY.',
+      title: 'Polywhale Finance',
+      tag: 'DEFI PROTOCOL',
       detail:
-        'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.'
+        'Polywhale Finance vision was and is to create one single application that can serve all your DEFI needs - and we started with farming.'
     },
     never: {
       title: 'NeverSurrender',
@@ -55,23 +55,23 @@ $(document).ready(function() {
         'NeverSurrender is a platform for the new ALS foundation mobile app in hopes to raise awareness and research funding to fight ALS. Pure JavaScript marketing site to promote the new ALS NeverSurrender app.'
     },
     themall: {
-      title: 'The Mall',
-      tag: 'PEER GUIDED SHOPPING.',
+      title: 'Xenon Finance',
+      tag: 'Impermax fork DEFI | Not recommended yet',
       detail:
-        'The Mall is a place to follow the latest fashion purchases of your friends and favorite celebrities. Built with Node.js and Handlebars. Features the ability to import thousands of top brands products into one shopping site.'
+        'Xenon is a decentralized LP leveraging protocol. Coming soon...'
     }
   };
 
-  $('#gallery .button').on('click', function() {
+  $('#gallery .button').on('click', function () {
     fillModal(this.id);
     $('.modal-wrap').addClass('visible');
   });
 
-  $('.close').on('click', function() {
+  $('.close').on('click', function () {
     $('.modal-wrap, #modal .button').removeClass('visible');
   });
 
-  $('.mask').on('click', function() {
+  $('.mask').on('click', function () {
     $('.modal-wrap, #modal .button').removeClass('visible');
   });
 
@@ -83,21 +83,21 @@ $(document).ready(function() {
 
   setDimensions();
 
-  $('#next').click(function() {
+  $('#next').click(function () {
     shiftSlide(-1);
   });
-  $('#prev').click(function() {
+  $('#prev').click(function () {
     shiftSlide(1);
   });
 
-  carousel.on('mousedown', function() {
+  carousel.on('mousedown', function () {
     if (carousel.hasClass('transition')) return;
     dragStart = event.pageX;
-    $(this).on('mousemove', function() {
+    $(this).on('mousemove', function () {
       dragEnd = event.pageX;
       $(this).css('transform', 'translateX(' + dragPos() + 'px)');
     });
-    $(document).on('mouseup', function() {
+    $(document).on('mouseup', function () {
       if (dragPos() > threshold) {
         return shiftSlide(1);
       }
@@ -133,7 +133,7 @@ $(document).ready(function() {
       .off('mousemove')
       .addClass('transition')
       .css('transform', 'translateX(' + direction * slideWidth + 'px)');
-    setTimeout(function() {
+    setTimeout(function () {
       if (direction === 1) {
         $('.slide:first').before($('.slide:last'));
       } else if (direction === -1) {
@@ -154,10 +154,10 @@ $(document).ready(function() {
         .parent()
         .attr('href', modalText[id].link);
 
-    $.each($('#modal li'), function(index, value) {
+    $.each($('#modal li'), function (index, value) {
       $(this).text(modalText[id].bullets[index]);
     });
-    $.each($('#modal .slide'), function(index, value) {
+    $.each($('#modal .slide'), function (index, value) {
       $(this).css({
         background:
           "url('img/slides/" + id + '-' + index + ".jpg') center center/cover",
