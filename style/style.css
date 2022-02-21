@@ -707,6 +707,7 @@ section:nth-of-type(3) #gallery .button {
 }
 #gallery .mix {
   padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 section:nth-of-type(3) #gallery .mix {
   display: none;
