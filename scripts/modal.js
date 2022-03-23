@@ -30,11 +30,11 @@ $(document).ready(function () {
       link: 'http://nftlocker.io'
     },
     walker: {
-      title: 'Enzyme Finance',
+      title: 'Dexify Finance',
       tag: 'ASSET MANAGMENT PROTOCOL',
       detail:
         'Enzyme empowers you to build and scale vaults based on the investment strategies of your choice - from discretionary and robo to ETFs and market making. Security is our priority. Our second generation smart contract-enforced platform is thoroughly tested and audited before any mainnet deployments are made.',
-      link: 'http://enzyme.finance'
+      link: 'http://dexify.finance'
     },
     powur: {
       title: 'Mydoorwallet',
